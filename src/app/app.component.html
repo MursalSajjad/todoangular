@@ -1,0 +1,17 @@
+<h1>{{ title }}</h1>
+<input type="text" #newTodo />
+<button (click)="addTodo(newTodo.value)">Add</button>
+
+<div *ngFor = "let todo of todos,let i =index">
+        <input type ="checkbox" [(ngModel)]="todos[i].checkbox">
+        {{ todo.name }}  
+        <button (click)="deleteTodo(todo)">x</button>
+</div>
+<br><br><button (click)="showSelected()">Selected</button>
+<br><br><button (click)="showUnSelected()">UnSelected</button>
+<br><br><button (click)="showAll()">All</button>
+
+<div *ngFor="let tt of reqTodo"><br>
+        <input type ="checkbox" [checked]="tt.checkbox">
+        <span> {{tt.name}} </span> 
+</div>
