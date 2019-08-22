@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddComponent } from './add/add.component';
 import { SelectedComponent } from './selected/selected.component';
-import { ShowComponent } from './show/show.component';
 import { UnSelectedComponent } from './un-selected/un-selected.component';
 import { ShowAllComponent } from './show-all/show-all.component';
 
@@ -16,7 +15,6 @@ import { ShowAllComponent } from './show-all/show-all.component';
     AppComponent,
     AddComponent,
     SelectedComponent,
-    ShowComponent,
     UnSelectedComponent,
     ShowAllComponent
   ],
