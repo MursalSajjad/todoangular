@@ -6,7 +6,7 @@ import { Component, OnInit,Input } from '@angular/core';
   styleUrls: ['./un-selected.component.css']
 })
 export class UnSelectedComponent implements OnInit {
-  @Input() unSelected: {name: string,checkbox: boolean}[] = [];
+ // @Input() unSelected: {name: string,checkbox: boolean}[] = [];
 
   constructor() { }
 

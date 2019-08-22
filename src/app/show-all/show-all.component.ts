@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./show-all.component.css']
 })
 export class ShowAllComponent implements OnInit {
-  @Input() all: {name:string, checkbox: boolean}[] = [];
+  //@Input() all: {name:string, checkbox: boolean}[] = [];
 
   constructor() { }
 

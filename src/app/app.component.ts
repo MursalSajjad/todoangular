@@ -43,22 +43,22 @@ showSelected()
 
 showUnSelected()
 {
-   this.uslct = this.todos.filter( (todo) => {
+   this.slct = this.todos.filter( (todo) => {
       if(todo.checkbox==false)
       return todo
     });
-  console.log(this.uslct);
+  console.log(this.slct);
 }
 
 showAll()
 {
-  this.sall = this.todos.filter( (a) => 
+  this.slct = this.todos.filter( (a) => 
   {
     if(a.checkbox==true || a.checkbox==false)
     return a;
   });
   
-  console.log(this.sall);
+  console.log(this.slct);
 }
 }
 
