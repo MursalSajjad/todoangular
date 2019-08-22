@@ -2,11 +2,6 @@
 <input type="text" #newTodo />
 <button (click)="addTodo(newTodo.value)">Add</button>
 
-<!-- <div *ngFor = "let todo of reqTodo,let i =index">
-  <input type ="checkbox" ng-checked="todo.checkbox" [(ngModel)] = "reqTodo[i].checkbox">
-  <span> {{todo.name}} </span> 
-  
-</div> -->
 <br><br><button (click)="showSelected()">Selected</button>
 <button (click)="showUnSelected()">UnSelected</button>
 <button (click)="showAll()">All</button>
