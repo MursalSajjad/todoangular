@@ -8,18 +8,13 @@ import { NgForOf } from '@angular/common';
 })
 export class AppComponent {
   title = 'Todo List';
-
- todos = [];
- reqTodo = [];
- all = [];
- array = [
-   {name:"Mursal", class: 5},
-   {name:"Maham", class: 4},
-   {name:"Hina", class: 6},
-   {name:"Sana", class: 7},
-
- ]
-
+  todos = [];
+  reqTodo = [];
+  slct=[];
+  uslct=[];
+  sall = [
+    ];
+  pMessage ="Hello child!";
  
 addTodo(newTodoName)
 {
@@ -29,44 +24,44 @@ addTodo(newTodoName)
   };
   this.todos.push(newTodo);
   console.log(this.todos)
+  this.reqTodo = this.todos;
 }
 
 deleteTodo(todo)
 {
-  this.todos=this.todos.filter(t=> t.name!==todo.name)
+  this.reqTodo=this.todos.filter(t=> t.name!==todo.name)
 }
 
 showSelected()
 {
-   this.reqTodo = this.todos.filter( (todo) => {
+   this.slct = this.todos.filter( (todo) => {
       if(todo.checkbox==true)
       return todo
     });
-  console.log(this.reqTodo);
+  console.log(this.slct);
 }
 
 showUnSelected()
 {
-  this.reqTodo = this.todos.filter( (td) => 
-  {
-    if(td.checkbox==false )
-    return td;
-  });
-  
-  console.log(this.reqTodo);
+   this.uslct = this.todos.filter( (todo) => {
+      if(todo.checkbox==false)
+      return todo
+    });
+  console.log(this.uslct);
 }
+
 showAll()
 {
-  this.reqTodo = this.todos.filter( (a) => 
+  this.sall = this.todos.filter( (a) => 
   {
     if(a.checkbox==true || a.checkbox==false)
     return a;
   });
   
-  console.log(this.reqTodo);
+  console.log(this.sall);
 }
 }
 
 // [checked]="countries[i].checked" (change)="countries[i].checked= !countries[i].checked"
 
-//{{ todo.label ? '&#10004;' : '&#10006;' }}
+// {{ todo.label ? '&#10004;' : '&#10006;' }}

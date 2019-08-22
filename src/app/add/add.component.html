@@ -1,0 +1,6 @@
+<p>add works!</p>
+<p *ngFor = "let todo of data, let i = index">
+    <input type ="checkbox"  [(ngModel)] = "data[i].checkbox">
+    <!-- <input type ="checkbox" ng-checked="todo.checkbox" [(ngModel)] = "reqTodo[i].checkbox"> -->
+    {{todo.name}}
+</p>
