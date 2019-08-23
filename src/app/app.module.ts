@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { AddComponent } from './add/add.component';
 import { SelectedComponent } from './selected/selected.component';
 import { UnSelectedComponent } from './un-selected/un-selected.component';
-import { ShowAllComponent } from './show-all/show-all.component';
 
 
 @NgModule({
@@ -15,8 +14,7 @@ import { ShowAllComponent } from './show-all/show-all.component';
     AppComponent,
     AddComponent,
     SelectedComponent,
-    UnSelectedComponent,
-    ShowAllComponent
+    UnSelectedComponent
   ],
   imports: [
     BrowserModule,

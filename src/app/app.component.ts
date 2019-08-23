@@ -12,8 +12,9 @@ export class AppComponent {
   reqTodo = [];
   slct=[];
   uslct=[];
-  sall = [
-    ];
+  sall = [];
+  show: boolean;
+  toggle: any;
   pMessage ="Hello child!";
  
 addTodo(newTodoName)
@@ -25,6 +26,7 @@ addTodo(newTodoName)
   this.todos.push(newTodo);
   console.log(this.todos)
   this.reqTodo = this.todos;
+  this.show = true;
 }
 
 deleteTodo(todo)
@@ -39,6 +41,8 @@ showSelected()
       return todo
     });
   console.log(this.slct);
+  this.show = false;
+  this.toggle = 1;
 }
 
 showUnSelected()
@@ -48,6 +52,8 @@ showUnSelected()
       return todo
     });
   console.log(this.slct);
+  this.show = false;
+  this.toggle = 2;
 }
 
 showAll()
@@ -59,6 +65,8 @@ showAll()
   });
   
   console.log(this.slct);
+  this.show = false;
+  this.toggle = 3;
 }
 }
 
