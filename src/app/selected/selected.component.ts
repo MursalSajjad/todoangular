@@ -12,5 +12,4 @@ export class SelectedComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
