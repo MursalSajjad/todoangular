@@ -10,12 +10,7 @@ export class AppComponent {
   title = 'Todo List';
   todos = [];
   reqTodo = [];
-  slct=[];
-  uslct=[];
-  sall = [];
   show: boolean;
-  toggle: any;
-  pMessage ="Hello child!";
  
 addTodo(newTodoName)
 {
@@ -33,8 +28,6 @@ deleteTodo(todo)
 {
   this.reqTodo=this.todos.filter(t=> t.name!==todo.name)
 }
-
-
 }
 
 // [checked]="countries[i].checked" (change)="countries[i].checked= !countries[i].checked"

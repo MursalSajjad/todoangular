@@ -47,10 +47,9 @@ showAll()
     if(a.checkbox==true || a.checkbox==false)
     return a;
   });
-  
+ 
   console.log(this.slct);
   this.show = false;
   this.toggle = 3;
 }
-
 }

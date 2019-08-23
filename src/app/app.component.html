@@ -2,12 +2,7 @@
 <input type="text" #newTodo />
 <button (click)="addTodo(newTodo.value)">Add</button>
 
-
 <app-add  [data]="reqTodo"></app-add>
 <br><br>
 
-<!-- <h1> List </h1> -->
-
-<!-- <app-un-selected *ngIf="show == false" [unSelected]="uslct"></app-un-selected> -->
-<!-- <app-show-all [all]="sall"></app-show-all> -->
-<app-show [rr]="reqtodo"></app-show>
+<app-show [rr]="reqTodo"></app-show>
