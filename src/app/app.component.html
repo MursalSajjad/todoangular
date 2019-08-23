@@ -2,14 +2,12 @@
 <input type="text" #newTodo />
 <button (click)="addTodo(newTodo.value)">Add</button>
 
-<app-selected *ngIf="show == false" [selected]="slct"></app-selected>
 
-<app-add *ngIf="show == true" [data]="reqTodo"></app-add>
+<app-add  [data]="reqTodo"></app-add>
 <br><br>
-<button [ngClass]="{'show':toggle==1}" (click)="showSelected()">Selected</button>
-<button [ngClass]="{'show':toggle==2}" (click)="showUnSelected()">UnSelected</button>
-<button [ngClass]="{'show':toggle==3}" (click)="showAll()">All</button>
+
 <!-- <h1> List </h1> -->
 
 <!-- <app-un-selected *ngIf="show == false" [unSelected]="uslct"></app-un-selected> -->
 <!-- <app-show-all [all]="sall"></app-show-all> -->
+<app-show [rr]="reqtodo"></app-show>

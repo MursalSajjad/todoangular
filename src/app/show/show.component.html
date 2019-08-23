@@ -1,0 +1,4 @@
+<button [ngClass]="{'show':toggle==1}" (click)="showSelected()">Selected</button>
+<button [ngClass]="{'show':toggle==2}" (click)="showUnSelected()">UnSelected</button>
+<button [ngClass]="{'show':toggle==3}" (click)="showAll()">All</button>
+<app-selected [selected]="slct"></app-selected>

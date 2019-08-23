@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddComponent } from './add/add.component';
 import { SelectedComponent } from './selected/selected.component';
-import { UnSelectedComponent } from './un-selected/un-selected.component';
+import { ShowComponent } from './show/show.component';
 
 
 @NgModule({
@@ -14,7 +14,7 @@ import { UnSelectedComponent } from './un-selected/un-selected.component';
     AppComponent,
     AddComponent,
     SelectedComponent,
-    UnSelectedComponent
+    ShowComponent
   ],
   imports: [
     BrowserModule,
