@@ -15,8 +15,6 @@ export class AddComponent implements OnInit {
   // @Input() reqTodo: any[];
   // @Input() childMessage;
   // @Input() ChildMessage: any;
-  
-
   // @Output() messageEvent = new EventEmitter<string>();
   
   constructor() { 
