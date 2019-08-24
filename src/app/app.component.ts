@@ -10,7 +10,9 @@ export class AppComponent {
   title = 'Todo List';
   todos = [];
   reqTodo = [];
-  show: boolean;
+  slct = [];
+  toggle: boolean;
+  list: any;
  
 addTodo(newTodoName)
 {
@@ -19,14 +21,52 @@ addTodo(newTodoName)
     checkbox: false
   };
   this.todos.push(newTodo);
-  //console.log(this.todos)
+  console.log(this.todos)
   this.reqTodo = this.todos;
-  this.show = true;
+  this.toggle = true;
 }
 
 deleteTodo(todo)
 {
   this.reqTodo=this.todos.filter(t=> t.name!==todo.name)
+}
+
+showSelected()
+{
+   this.slct = this.todos.filter( (todo) => {
+      if(todo.checkbox==true)
+      return todo
+    });
+  console.log(this.slct);
+  this.list = 1;
+  this.toggle = false;
+}
+
+showUnSelected()
+{
+  this.slct = this.todos.filter( (td) => 
+  {
+    if(td.checkbox==false )
+    return td;
+  });
+  
+  console.log(this.slct);
+  this.list = 2;
+  this.toggle = false;
+
+}
+showAll()
+{
+  this.slct = this.todos.filter( (a) => 
+  {
+    if(a.checkbox==true || a.checkbox==false)
+    return a;
+  });
+  
+  console.log(this.slct);
+  this.list = 3;
+  this.toggle = false;
+
 }
 }
 
